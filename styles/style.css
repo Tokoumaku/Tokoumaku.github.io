@@ -1,0 +1,219 @@
+/* 
+*****************************************************************************
+                                  === CSS ===
+*****************************************************************************
+*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bc6c25;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #914f16;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#scrool-to-top {
+  background-color: #0d6efd;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 5px #ccc;
+  z-index: 99;
+
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+#scrool-to-top a i {
+  text-align: center;
+  line-height: 60px;
+  padding: 17px;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+footer {
+  font-size: 22px;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+/* My Mouse Section */
+.mouse-box {
+  position: relative;
+  background-color: #bc6c25;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.mouse-box::before {
+  content: "MY";
+  position: absolute;
+  color: #ffffff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.mouse-box:hover::before {
+  opacity: 0.2;
+}
+
+.mouse-box::after {
+  content: "MOUSE";
+  position: absolute;
+  color: #ffffff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.mouse-box:hover::after {
+  opacity: 0.2;
+}
+
+.mouse-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.mouse-box:hover .mouse-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.mouse-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 140px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.mouse-box:hover .mouse-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.mouse-img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 100px);
+  max-width: 315px;
+  transition: 0.5s;
+}
+
+.mouse-box:hover .mouse-img {
+  transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
+}
+
+/* TOKO UMAKU 3D */
+
+.header-umaku {
+  width: 500px;
+  height: 100px;
+  /* background: #bc6c25; */
+  background: transparent;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.header-umaku h1 {
+  font-size: 65px;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px #3a3a3a;
+  font-family: "Gentium Plus", serif;
+}
+
+/* Contact */
+
+.social-menu ul {
+  position: absolute;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fa-brands {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.6s;
+  color: #000000;
+}
+
+.social-menu ul li .fa-brands:hover {
+  color: #ffffff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #25d366;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
