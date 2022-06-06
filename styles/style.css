@@ -217,3 +217,8 @@ section {
 .social-menu ul li:nth-child(2) a:hover {
   background-color: #e4405f;
 }
+
+.kolaborasi {
+  display: flex;
+  justify-content: center;
+}
